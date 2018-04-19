@@ -1,0 +1,15 @@
+/floxim_files/compiled_templates
+/floxim_files/fx_thumbs
+/floxim_files/asset_cache
+/floxim_files/less_cache
+/floxim_files/cache
+/floxim_files/php_dictionaries
+/floxim_files/log
+/module/Dubr
+/module/Floxim
+/module/FloximSaas
+/vendor
+/theme/Floxim
+test.php
+logs.php
+config_custom.php

@@ -1,0 +1,14 @@
+fonts:
+    PfDinDisplay:
+        css: pfdindisplay.less
+        styles:
+            - 300
+            - 400
+            - 900
+    PfDinTextComp:
+        css: pfdintextcomp.less
+        styles:
+            - 300
+            - 400
+            - 500
+            - 700

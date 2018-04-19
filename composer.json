@@ -1,0 +1,22 @@
+{
+    "name" : "floxim/empty",
+    "description" : "Empty Floxim",
+    "minimum-stability": "dev",
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/dubrowsky/floxim-module-typograf.git"
+        }
+    ],
+    "require" : {
+        "floxim/floxim" : "dev-dev",
+        "floxim/module-blog" : "*",
+        "floxim/module-corporate" : "*",
+        "floxim/module-layout" : "*",
+        "floxim/module-media" : "*",
+        "floxim/module-shop" : "*",
+        "floxim/module-ui" : "*",
+        "floxim/theme-basic" : "*",
+        "dubr/floxim-module-typograf" : "*"
+    }
+}

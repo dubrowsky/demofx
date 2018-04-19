@@ -1,0 +1,27 @@
+@face: 'PfDinDisplay';
+@weights: 300 400 900;
+@paths: light reg 'black';
+
+.ff (@path; @weight; @style) {
+  @url: ~"fonts/@{face}/@{path}";
+
+  @font-face {
+    font-family: @face;
+    font-weight: @weight;
+    font-style: @style;
+    src: url('@{url}.eot?') format('eot'),
+    url('@{url}.woff2') format('woff2'),
+    url('@{url}.woff') format('woff'),
+    url('@{url}.ttf')  format('truetype');
+  }
+}
+
+.ff-loop (@index) when (@index > 0) {
+  @weight: extract(@weights, @index);
+  @path: extract(@paths, @index);
+
+  .ff(@path; @weight; normal);
+  .ff-loop(@index - 1);
+}
+
+.ff-loop(3);
